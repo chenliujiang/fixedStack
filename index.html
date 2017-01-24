@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fixed stack</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <h1 align="center">fixedStack</h1>
+    </div>
+</header>
+<div class="wrapper">
+    <h1 id="info">固定多个元素在顶部</h1>
+    <p>当滚动条向下滚动时，固定多个元素在顶部</p>
+    <h1 id="use">使用方法</h1>
+    <p>fixed: 固定元素</p>
+    <p>selector: 父元素</p>
+    <pre>
+        <code>
+fixedStack([<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'fixed': '#info',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'selector': 'body'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'fixed': '#use',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'selector': 'body'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+])
+        </code>
+    </pre>
+</div>
+<footer>
+    <div class="wrapper"></div>
+</footer>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="src/fixedStack.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
